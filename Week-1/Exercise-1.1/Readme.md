@@ -43,7 +43,8 @@ In TCP/IP, the connection is built between two hosts (the client and the server)
 
 3. After this, the first computer receives the message and acknowledges it by sending an ACK message, that is received by the second computer and the TCP socket connection is established.
 
------add TCP image
+
+![TCPIP](https://user-images.githubusercontent.com/46752637/174396969-6f1bfac7-01a8-441e-93f2-1553ebd05df2.png)
 
 #### Connection Denied? - The firewall
 
@@ -51,13 +52,14 @@ When you use your network it would be good to consider looking at your firewall 
 
 #### Security and Encryption - HTTPS/SSL
 
+
 As mentioned before HTTPS stands for HyperText Transfer Protocol Secure, and is a secure version of the HTTP. This protocol defines different types of requests and responses served between clients and servers over a network. It is the main way to transfer data between a browser and a website. The requests include GET, POST, PUT, among others. The HTTPS requests and responses are secure by a standard security protocol called Secure Sockets Layer (SSL) which encrypts the data being exchanged between your browser and Holberton School's website server using a Public Key Infrastructure (PKI).
 
 ## Browser send HTTP request to server
 
 The browser sends a GET request to the server asking for google.com webpage. It will also send the cookies that the browser has for this domain. Cookies are designed for websites to remember stateful information (items in the shopping cart or wishlist for a website like Amazon) or to record the user’s browsing history etc. It also has additional information like request header fields for that allows the client to pass information about the request, and about the client itself, to the server. Other header fields like the Accept-Language header tells the server which language the client is able to understand. All these header fields are added together to form an HTTP request.
 
----add http request image
+![HTTP_RequestMessageExample](https://user-images.githubusercontent.com/46752637/174397020-4848041d-8442-4f8f-92a8-e182b2cd33f9.png)
 
 ## HTTP Request Response
 
@@ -70,17 +72,24 @@ The server handles the HTTP request and sends a response. The first line is call
 - 5xx: Server Error: It means there is some error on the server-side.
 >It also contains response header fields like Server, Location, etc. These header fields give information about the server. A Content-Length header is a number denoting the exact byte length of the HTTP body. All these headers along with some additional information are added to form an HTTP response.
 
----add httos response image
+![HTTP_ResponseMessageExample](https://user-images.githubusercontent.com/46752637/174397078-ce78b4f7-0f29-488f-806c-c6115e47c7d1.png)
+
+![what-happens-when-you-type-a-url-in-the-web-browser-request-response-f68c0cb95019db02](https://user-images.githubusercontent.com/46752637/174397116-9668b49e-8c4d-45c6-84c6-ddbd35164e99.jpg)
+
 
 ## Browser rendering HTML webpage
 
 When a browser sends a request to a server to fetch an HTML document, the server returns an HTML page in binary stream format which is basically a text file with the response header `Content-Type` set to the value `text/html; charset=UTF-8`.
 Here `text/html` is a MIME Type which tells the browser that it is an HTML document and `charset=UTF-8` tells the browser that it is encoded in UTF-8 character encoding. Using this information, the browser can convert the binary format into a readable text file. This has shown below in the screenshot.
 
----add html render image
+![html render](https://user-images.githubusercontent.com/46752637/174397219-8eb00a6d-f016-4efc-a334-43f6b9dcbd83.png)
+
 
 If this header is missing, the browser would not understand how to process the file and it will render in plain text format. But if everything is OK, after this conversion, the browser can start reading the HTML document. A typical HTML document could look like this.
 
----add html layout imgae
+<img width="720" alt="html layout" src="https://user-images.githubusercontent.com/46752637/174397255-c524c05a-f6d5-4454-b2b7-4cfa63da26ac.png">
+
 
 In the above document, our webpage is dependent on style.css to provide styles to HTML elements and main.js to perform some JavaScript operations. With some neat CSS styles, the browser will render above webpage as shown below.
+
+![rendered](https://user-images.githubusercontent.com/46752637/174397275-9b6a3c4e-67c4-4474-b691-ffee6ead0ae1.png)
