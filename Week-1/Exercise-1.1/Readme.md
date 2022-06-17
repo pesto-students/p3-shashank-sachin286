@@ -29,4 +29,4 @@ After which the DNS server requests to the .com TLD and the TLD DNS server respo
 After all of this, the ISP DNS server will store the collected information into its local cache and it will not have to repeat the entire process if the same query comes in the future, it can now provide the Google's IP address directly.
 
 
-```![1598250658474](https://user-images.githubusercontent.com/46752637/174392910-56af4a2c-15e4-4271-a033-3c818cea8742.png)
+![1598250658474](https://user-images.githubusercontent.com/46752637/174392910-56af4a2c-15e4-4271-a033-3c818cea8742.png)
