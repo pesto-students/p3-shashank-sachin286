@@ -93,3 +93,16 @@ If this header is missing, the browser would not understand how to process the f
 In the above document, our webpage is dependent on style.css to provide styles to HTML elements and main.js to perform some JavaScript operations. With some neat CSS styles, the browser will render above webpage as shown below.
 
 ![rendered](https://user-images.githubusercontent.com/46752637/174397275-9b6a3c4e-67c4-4474-b691-ffee6ead0ae1.png)
+
+### Document Object Model (DOM)
+
+When the browser reads HTML code, whenever it encounters an HTML element like html, body, div etc., it creates a JavaScript object called a Node. Eventually, all HTML elements will be converted to JavaScript objects.
+Since every HTML element has different properties, the Node object will be created from different classes (constructor functions). For example, the Node object for the div element is created from HTMLDivElement which inherits Node class.
+After the browser has created Nodes from the HTML document, it has to create a tree-like structure of these node objects. Since our HTML elements in the HTML file are nested inside each other, the browser needs to replicate that but using Node objects it has previously created. This will help the browser efficiently render and manage the webpage throughout its lifecycle.
+
+
+### CSS Object Model (CSSOM)
+When we design a website, our intentions are to make it as good looking as possible. And we do that by providing some styles to HTML elements. In the HTML page, we provide styles to HTML elements using CSS which stands for Cascading Style Sheets. Using CSS selectors, we can target DOM elements and set a value to style property such as color or font-size.
+There are different methods of applying styles to HTML elements like using an external CSS file, with embedded CSS using style tag, with an inline method using the style attribute on HTML elements or using JavaScript. But in the end, the browser has to do the heavy lifting of applying CSS styles to the DOM elements.
+After constructing the DOM, the browser reads CSS from all the sources (external, embedded, inline, user-agent, etc.) and construct a CSSOM. CSSOM stands for CSS Object Model which is a Tree Like structure just like DOM.
+Each node in this tree contains CSS style information that will be applied to DOM elements that it target (specified by the selector). CSSOM, however, does not contain DOM elements which can’t be printed on the screen like <meta>, <script>, <title> etc.
