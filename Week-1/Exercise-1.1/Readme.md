@@ -100,9 +100,15 @@ When the browser reads HTML code, whenever it encounters an HTML element like ht
 Since every HTML element has different properties, the Node object will be created from different classes (constructor functions). For example, the Node object for the div element is created from HTMLDivElement which inherits Node class.
 After the browser has created Nodes from the HTML document, it has to create a tree-like structure of these node objects. Since our HTML elements in the HTML file are nested inside each other, the browser needs to replicate that but using Node objects it has previously created. This will help the browser efficiently render and manage the webpage throughout its lifecycle.
 
+<img width="712" alt="Screenshot 2022-06-22 at 12 09 53 AM" src="https://user-images.githubusercontent.com/46752637/174875076-5da6e3e4-3d39-47b6-9b14-647ba5f1ea7c.png">
+
 
 ### CSS Object Model (CSSOM)
 When we design a website, our intentions are to make it as good looking as possible. And we do that by providing some styles to HTML elements. In the HTML page, we provide styles to HTML elements using CSS which stands for Cascading Style Sheets. Using CSS selectors, we can target DOM elements and set a value to style property such as color or font-size.
 There are different methods of applying styles to HTML elements like using an external CSS file, with embedded CSS using style tag, with an inline method using the style attribute on HTML elements or using JavaScript. But in the end, the browser has to do the heavy lifting of applying CSS styles to the DOM elements.
 After constructing the DOM, the browser reads CSS from all the sources (external, embedded, inline, user-agent, etc.) and construct a CSSOM. CSSOM stands for CSS Object Model which is a Tree Like structure just like DOM.
 Each node in this tree contains CSS style information that will be applied to DOM elements that it target (specified by the selector). CSSOM, however, does not contain DOM elements which can’t be printed on the screen like <meta>, <script>, <title> etc.
+  
+  <img width="553" alt="Screenshot 2022-06-22 at 12 13 34 AM" src="https://user-images.githubusercontent.com/46752637/174875125-bc130c1d-4ed1-4f6a-b5c5-e7a7204cf645.png">
+
+  
