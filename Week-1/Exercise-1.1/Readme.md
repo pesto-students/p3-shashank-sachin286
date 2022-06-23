@@ -109,6 +109,4 @@ There are different methods of applying styles to HTML elements like using an ex
 After constructing the DOM, the browser reads CSS from all the sources (external, embedded, inline, user-agent, etc.) and construct a CSSOM. CSSOM stands for CSS Object Model which is a Tree Like structure just like DOM.
 Each node in this tree contains CSS style information that will be applied to DOM elements that it target (specified by the selector). CSSOM, however, does not contain DOM elements which can’t be printed on the screen like <meta>, <script>, <title> etc.
   
-  <img width="553" alt="Screenshot 2022-06-22 at 12 13 34 AM" src="https://user-images.githubusercontent.com/46752637/174875125-bc130c1d-4ed1-4f6a-b5c5-e7a7204cf645.png">
-
-  
+  <img width="553" alt="Screenshot 2022-06-22 at 12 13 34 AM" src="https://user-images.githubusercontent.com/46752637/174875125-bc130c1d-4ed1-4f6a-b5c5-e7a7204cf645.png">  
