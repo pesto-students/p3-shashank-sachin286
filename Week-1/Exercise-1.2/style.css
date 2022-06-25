@@ -2,11 +2,13 @@
   --white: #ffffff;
   --black: #000000;
   --blue: #1d0eed;
-  --smallfont: small;
   --bg-color: #dcdcdc;
   --bottom-color: #3c5a92;
+
+  --smallfont: small;
   --boldfont: bold;
 }
+
 * {
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -20,7 +22,7 @@
 }
 
 .header {
-  float:left;
+  float: left;
   margin-left: 50px;
   margin-top: 40px;
   color: var(--white);
@@ -35,7 +37,7 @@
 
 .header_btns a {
   color: var(--white);
-  margin-right:10px
+  margin-right: 10px;
 }
 
 .header_btns ul li {
@@ -52,7 +54,7 @@
 }
 
 .body {
-  border-right:3px solid var(--black);
+  border-right: 3px solid var(--black);
   border-top: 3px solid var(--black);
 }
 
@@ -111,8 +113,6 @@ tr:nth-child(even) {
   margin-top: 2px;
 }
 
-
-
 .footer_btns {
   float: right;
 }
@@ -130,7 +130,7 @@ tr:nth-child(even) {
   float: left;
   margin-left: 50px;
   margin-top: 30px;
-  margin: 3%
+  margin: 3%;
 }
 
 .current_play {
@@ -145,11 +145,11 @@ tr:nth-child(even) {
   width: 120px;
   margin-top: 10%;
   margin-left: 10%;
-  float:left;
+  float: left;
 }
 
 .p {
-  line-height:0px;
+  line-height: 0px;
   font-size: var(--smallfont);
 }
 
