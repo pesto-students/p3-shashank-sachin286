@@ -1,0 +1,158 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #1d0eed;
+  --bg-color: #dcdcdc;
+  --bottom-color: #3c5a92;
+
+  --smallfont: small;
+  --boldfont: bold;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  list-style-type: none;
+}
+
+.main {
+  margin-left: 25px;
+  /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+.header {
+  float: left;
+  margin-left: 50px;
+  margin-top: 40px;
+  color: var(--white);
+}
+
+.header_btns {
+  margin: 0px;
+  position: absolute;
+  top: 150px;
+  margin-left: 200px;
+}
+
+.header_btns a {
+  color: var(--white);
+  margin-right: 10px;
+}
+
+.header_btns ul li {
+  float: left;
+  padding: 110px 10px;
+  font-size: var(--smallfont);
+}
+
+.header_bg {
+  background-color: var(--black);
+  width: 98%;
+  height: 40%;
+  margin-left: 30px;
+}
+
+.body {
+  border-right: 3px solid var(--black);
+  border-top: 3px solid var(--black);
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 60px;
+  width: 95%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-color);
+}
+
+.btn {
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  color: var(--blue);
+  font-weight: var(--boldfont);
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  /* set the bottom to 0*/
+  margin-left: 0px;
+  background-color: var(--bottom-color);
+  height: 18.4%;
+  width: 99.8%;
+}
+
+.sidebar {
+  height: 81%;
+  width: 80x;
+  position: fixed;
+  z-index: 1;
+  top: 1px;
+  left: 0;
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  padding-top: 2px;
+  margin-top: 2px;
+}
+
+.sidebar a {
+  padding: 30px 8px 30px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--black);
+  display: block;
+  margin-top: 2px;
+}
+
+.footer_btns {
+  float: right;
+}
+
+.footer_btns a {
+  color: var(--white);
+}
+
+.footer_btns ul li {
+  float: left;
+  padding: 60px 70px;
+}
+
+.image_bg {
+  float: left;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin: 3%;
+}
+
+.current_play {
+  margin-left: 2%;
+  padding-top: 2.5%;
+  color: var(--white);
+  float: left;
+}
+
+.current_play_img {
+  height: 120px;
+  width: 120px;
+  margin-top: 10%;
+  margin-left: 10%;
+  float: left;
+}
+
+.p {
+  line-height: 0px;
+  font-size: var(--smallfont);
+}
+
+.current_img {
+  float: left;
+}
