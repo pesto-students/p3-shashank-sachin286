@@ -71,7 +71,7 @@ body {
 }
 
 .main-wrapper:hover .div-three {
-    transform: rotate(90deg) translateY(65px);
+    transform: rotate(-90deg) translateY(-65px);
     transition: all ease 1s;
 }
 
@@ -81,6 +81,6 @@ body {
 }
 
 .main-wrapper:hover .div-two {
-    transform: rotate(90deg) translateY(-65px);
+    transform: rotate(-90deg) translateY(65px);
     transition: all ease 1s;
 }
