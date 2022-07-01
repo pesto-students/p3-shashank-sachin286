@@ -3,13 +3,14 @@
         <title>Lorem ipsum</title>
 		<link rel="stylesheet" href="style.css"/>
 	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<body>
 		<h1>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h1>
 		<div class="left_section">			
 			<div class="para">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique, sem id tincidunt dictum, odio lorem consequat ante, at ultricies nunc massa ac metus. Nam consequat eros libero, ac malesuada enim placerat non. Duis sed leo nisl. Nulla facilisi.</p>
 			</div>
-			<img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="400" height="245">
+			<img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" class = "trulli-img">
 		</div>
 		<div>
 		<div class="right_section">
@@ -36,31 +37,31 @@
 		 	<label for="miss">Miss</label>
 		 	</p>
 			<div class="field">
-				<label for="fname">First name</label>
+				<label for="fname" class="right-format">First name</label>
 				<input type="text" id="fname" name="fname" required><br>
 			</div>
 			<div class="field">
-				<label for="lname">Last name</label>
+				<label for="lname" class="right-format">Last name</label>
 				<input type="text" id="lname" name="lname" required>
 			</div>
 			<div class="field">
-				<label for="email">Email</label>
+				<label for="email" class="right-format">Email</label>
 				<input type="text" id="email" name="email" required>
 			</div>
 			<div class="field">
-				<label for="phone">Phone number</label>
+				<label for="phone" class="right-format">Phone number</label>
 				<input type="text" id="phone" name="phone" required>
 			</div>
 			<div class="field">
-				<label for="password">Password</label>
+				<label for="password" class="right-format">Password</label>
 				<input type="text" id="password" name="password" required>
 			</div>
 			<div class="field">
-				<label for="conf_password">Confirm your password</label>
-				<input type="text" id="conf_password" name="conf_password" required>
+				<label for="conf_password" class="right-format">Confirm your password</label>
+				<input type="text" id="conf_password" name="conf_password">
 			</div>
 			<div class="field">
-				<label for="countries">Country</label>
+				<label for="countries" class="right-format">Country</label>
 				<select name="countries" id="countries" required>
 					<option value="Canada">Canada</option>
 					<option value="India">India</option>

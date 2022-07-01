@@ -93,7 +93,20 @@ h1 {
   clear: both;
 }
 
-@media only screen and (max-width: 629px) {
+.trulli-img {
+  width:90%;
+  height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right-format {
+  display: inline-block;
+  width: 120px;
+}
+
+@media only screen and (max-width: 920px) {
   /* for widths less than or equal to 629 pixels */
   .left_section {
     float: none;
