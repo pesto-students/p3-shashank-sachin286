@@ -1,4 +1,3 @@
-const { product } = require('./calculator');
 const mathOperations = require('./calculator');
 describe("Calculator tests", () => {
     test('adding 1 + 2 should return 3', () => {
