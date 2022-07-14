@@ -2,9 +2,7 @@
 //const hasDuplicate = arr => new Set(arr).size !== arr.length;
 
 function hasDuplicate (arr) {
-    let set1 = new Set(arr);
-    console.log(set1);
-    if (set1.size == arr.length) {
+    if (new Set(arr).size == arr.length) {
         return true;
     } else {
         return false;

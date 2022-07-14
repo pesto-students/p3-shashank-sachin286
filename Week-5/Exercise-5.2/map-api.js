@@ -1,8 +1,7 @@
 function vowelCount(str) {
   const vowelMap = new Map();
   for (let char of str) {
-    let lowerCaseChar = char.toLowerCase();
-    if ("aeiou".includes(lowerCaseChar)) {
+    if ("aeiou".includes(char.toLowerCase())) {
       if (vowelMap.has(lowerCaseChar)) {
         vowelMap.set(lowerCaseChar, vowelMap.get(lowerCaseChar) + 1);
       } else {
