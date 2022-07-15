@@ -11,4 +11,8 @@ describe("Calculator tests", () => {
     test('multiplying 2 * 3 should erturn 6', () => {
       expect(mathOperations.product(2,3)).toBe(6);
     });
+
+    test('adding 2 strings should return concat string', () => {
+      expect(mathOperations.sum("1","2")).toBe("12");
+    });
    })
