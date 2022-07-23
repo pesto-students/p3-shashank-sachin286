@@ -18,5 +18,5 @@ function maxSubArraySum( a, size)
 let x = [1,2,-3,-9,-7];
 console.log("max sub array = " + maxSubArraySum(x,x.length));
 
-//Time complexity = 0(n)
 //Space complexity = 0(1) + 2
+//Time complexity = 0(n)
