@@ -1,4 +1,4 @@
-var head;
+let head;
 
 class Node {
   constructor(val) {
