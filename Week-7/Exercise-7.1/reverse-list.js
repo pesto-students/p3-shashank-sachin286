@@ -23,9 +23,9 @@ function reverse(node) {
 }
 
 function display(node) {
- let str = "";
+  let str = "";
   while (node != null) {
-    str = node.data + " -> " + str;
+    str += node.data + " -> ";
     node = node.next;
   }
   console.log(str);
@@ -49,5 +49,5 @@ head = reverse(head);
 console.log("\nReversed linked list :");
 display(head);
 
-//Time Complexity: O(N) 
+//Time Complexity: O(N)
 //Auxiliary Space: O(1)
