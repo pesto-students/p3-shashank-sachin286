@@ -1,0 +1,29 @@
+functioncreateIncrement() {
+    let count=0;
+    functionincrement() {
+        count++;
+    }
+        
+    let message=`Count is${count}`;
+    functionlog() {
+        console.log(message);
+    }
+    return[increment,log];
+}
+
+const[increment,log] =createIncrement();
+
+increment();
+increment();
+increment();
+log();// What is logged?
+
+------------------------------
+Output - Count is 0
+
+We can see createIncrement is called at first and which inturn calls increment() and also sets "message" variable for
+the first time i.e "Count is 0 ", and it takes 0 because at the first initialiation the count value is 0 since
+increment() function is not invoked yet.
+after 3 invokation of the increment(), the count value is incremented, but the log function is never called and
+also the message variable value is not changed.
+At the end when log() is invoked it prints what is stored in the message variable and i.e the output.

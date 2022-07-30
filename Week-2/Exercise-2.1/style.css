@@ -1,0 +1,86 @@
+:root {
+    --black: #000000;
+    --red: #ff0000;
+    --yellow: #ffff00;
+    --blue: #1d0eed;
+    --green: #00ff00;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.main-wrapper {
+    width: 200px;
+    height: 200px;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.div-one {
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    height: 50%;
+    left: 0px;
+    background: var(--red);
+    transform: rotate(0deg) translateY(0);
+    transition: all ease 1.5s;
+}
+
+.div-two {
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    background: var(--yellow);
+    transform: rotate(0deg) translateY(0);
+    transition: all ease 1.5s;
+}
+
+.div-three {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    left: 0px;
+    background: var(--blue);
+    transform: rotate(0deg) translateY(0);
+    transition: all ease 1.5s;
+}
+
+.div-four {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    background: var(--green);
+    transform: rotate(0deg) translateY(0);
+    transition: all ease 1.5s;
+}
+
+.main-wrapper:hover .div-one {
+    transform: rotate(90deg) translateY(65px);
+    transition: all ease 1s;
+}
+
+.main-wrapper:hover .div-three {
+    transform: rotate(-90deg) translateY(-65px);
+    transition: all ease 1s;
+}
+
+.main-wrapper:hover .div-four {
+    transform: rotate(90deg) translateY(-65px);
+    transition: all ease 1s;
+}
+
+.main-wrapper:hover .div-two {
+    transform: rotate(-90deg) translateY(65px);
+    transition: all ease 1s;
+}
