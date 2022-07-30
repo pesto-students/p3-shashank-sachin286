@@ -7,7 +7,6 @@ class Node {
   }
 }
 
-/* Function to reverse the linked list */
 function reverse(node) {
   let prev = null;
   let current = node;
