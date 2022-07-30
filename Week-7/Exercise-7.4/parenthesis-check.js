@@ -28,3 +28,6 @@ if (parenthesisChecker(expr)) {
 } else {
   console.log("Not Balanced ");
 }
+
+//Time Complexity: O(N)
+//Auxiliary Space: O(N)
