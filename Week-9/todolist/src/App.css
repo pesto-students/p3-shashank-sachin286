@@ -1,0 +1,32 @@
+.app {
+  padding: 30px;
+  background-color: #fffaf0;
+}
+
+.todo {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.green {
+  background-color: #4caf50;
+}
+.red {
+  background-color: #f44336;
+}
+.blue {
+  background-color: #0000ff;
+}
