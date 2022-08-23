@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-function FormTodo({ addTodo }) {
+const FormTodo = ({ addTodo }) => {
     const [value, setValue] = useState("");
   
     const handleSubmit = (ele) => {

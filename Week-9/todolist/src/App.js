@@ -4,7 +4,7 @@ import Todo from "./Todo.js";
 import FormTodo from "./FormTodo.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+const App = () => {
   const [todos, setTodos] = useState([
     {
       text: "This is a sampe todo",

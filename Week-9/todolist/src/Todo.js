@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-function Todo({ todo, index, markTodo, removeTodo }) {
+const Todo = ({ todo, index, markTodo, removeTodo }) => {
     return (
       <div className="todo">
         <span style={{ textDecoration: todo.isDone ? "line-through" : "" }}>
